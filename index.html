@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample code</title>
+    <title>MCA I TimeTable</title>
+    <style>
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #break{
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+        #lunch{
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1 style="text-align: center;">TIME TABLE: MCA I - AI & DS (2025-26 ODD SEMESTER)</h1>
+    <h3>ROOM NO: C-301/305</h3>
+    <table>
+        <tr>
+            <th>DAY/TIME</th>
+            <th>09.00-09.55</th>
+            <th>09.55-10.50</th>
+            <th>10.50-11.00</th>
+            <th>11.00-11.55</th>
+            <th>11.55-12.50</th>
+            <th>12.50-1.20</th>
+            <th>1.20-2.15</th>
+            <th>2.15-3.10</th>
+            <th>3.10-4.05</th>
+        </tr>
+        <tr>
+            <td>MONDAY</td>
+            <td>TMD 104 <hr> SKB</td>
+            <td>XMD105 <hr> NB</td>
+            <td rowspan="5" id="break">B R E A K</td>
+            <td class="break" colspan="2">PMD 101 - LAB 2 <hr> VS</td>
+            <td rowspan="5" id="lunch">L U N C H</td>
+            <td>TMD 102 <hr> SD</td>
+            <td>TMD 111 <hr> NT</td>
+            <td>BMD 102 <hr> SKB</td>
+        </tr>
+        <tr>
+            <td>TUESDAY</td>
+            <td>TMD 103 <hr> PJ</td>
+            <td>XMD 105 <hr> NB</td>
+            <td>TMD 105 <hr> BR</td>
+            <td>TMD 101 <hr> MS</td>
+            <td>TMD 111 <hr> NT</td>
+            <td>TMD 104 <hr> SKB</td>
+            <td>BMD 102 <hr> SKB</td>
+        </tr>
+    </table>
 </body>
 </html>
